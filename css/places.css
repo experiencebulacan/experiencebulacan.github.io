@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    padding: 20px 40px !important;
+    background: linear-gradient(rgb(168, 127, 15), rgb(94, 71, 10));
+    border-bottom: 1px solid rgba(180, 217, 231, 0.5);
+    box-shadow: 0 4px 15px -5px;
+}
+
+.header {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(../img/places-bg.jpg) no-repeat center/cover;
+    width: 100%;
+    height: 33rem;
+    padding: 0 50px;
+}
+
+.title {
+    width: 90%;
+    margin: auto;
+    position: relative;
+    top: 50%;
+    color: #fff;
+    text-shadow: -1px 1px #000;
+}
+
+.overall {
+    width: 80%;
+    margin: auto;
+}
+
+.main {
+    width: 70%;
+    float: left;
+    padding: 20px;
+}
+
+.sidebar {
+    float: left;
+    padding: 20px;
+    background: #f4f4f4;
+    width: 30%;
+}
+
+.list {
+    margin-left: 50px;
+    padding: 10px 0 30px 0;
+}
+
+.list-desc img {
+    width: 100%;
+    height: 90%;
+    margin-bottom: 70px;
+}
+
+@media screen and (max-width: 891px) {
+    .main {
+        width: 100%;
+    }
+    .sidebar {
+        width: 100%;
+    }
+}
