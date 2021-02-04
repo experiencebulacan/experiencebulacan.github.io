@@ -5,36 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tourist Spots in Bulacan</title>
-    <link rel="shortcut icon" href="img/icomn.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/places.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo d-flex">
+                <a href="#">Experience<span>Bulacan</span></a></div>
+            <ul class="menu">
 
-        <a class="navbar-brand" href="">Experience Bulacan</a>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav text-center ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">Tourist Spots</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Travel Tips</a>
-                </li>
             </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
     </nav>
 
@@ -50,11 +41,13 @@
             <p>
                 There’s no shortage of Bulacan tourist spots travelers and locals can enjoy! This province South of the metro is a haven of historical, ecological and cultural heritages, boasting some of the best stopovers while still being very accessible from Manila.
                 <br><br> While there are a ton of places to visit, choosing which ones to include to your itinerary could be challenging; especially if you plan to relax and unwind away from the chaos of the city. To help you out, we’ve listed down some
-                of the best kept secrets of the province — less crowded, but no less stunning. Here are some of the best Bulacan tourist spots.
+                of the best kept secrets of the province — less crowded, but no less stunning.
             </p>
 
+            <h3>Here are some of the best Bulacan tourist spots:</h3>
+
             <div class="list text-info">
-                <li><a href="#" class="text-info">The 13th Waterfalls/13th Falls</a></li>
+                <li><a href="places/the13thwaterfalls.html" class="text-info">The 13th Waterfalls/13th Falls</a></li>
                 <li><a href="#" class="text-info">Amana Waterpark</a></li>
                 <li><a href="#" class="text-info">Barosoain Church</a></li>
                 <li><a href="#" class="text-info">Grotto of Our Lady of Lourdes</a></li>
@@ -68,7 +61,7 @@
 
             <div class="list1">
                 <div class="list-desc">
-                    <h1><a href="" class="text-primary">1. The 13th Waterfalls/13th Falls</a></h1>
+                    <h1><a href="places/the13thwaterfalls.html" class="text-primary">1. The 13th Waterfalls/13th Falls</a></h1>
                     <img src="img/list1.jpg" alt="">
                 </div>
                 <div class="list-desc">
@@ -117,6 +110,25 @@
 
     <br>
 
+    <script>
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                // sticky navbar on scroll script
+                if (this.scrollY > 40) {
+                    $('.navbar').addClass("sticky");
+                } else {
+                    $('.navbar').removeClass("sticky");
+                }
+
+                // scroll-up button show/hide script
+                if (this.scrollY > 100) {
+                    $('.scroll-up-btn').addClass("show");
+                } else {
+                    $('.scroll-up-btn').removeClass("show");
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
