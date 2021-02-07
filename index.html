@@ -26,7 +26,7 @@
             <ul class="menu">
                 <li><a href="#" class="menu-btn">Home</a></li>
                 <li><a href="#about" class="menu-btn">About</a></li>
-                <li><a href="#services" class="menu-btn">Tips</a></li>
+                <li><a href="#teams" class="menu-btn">Teams</a></li>
                 <li><a href="#contact" class="menu-btn">Contact</a></li>
             </ul>
             <div class="menu-btn">
@@ -45,10 +45,10 @@
                     <div class="text-1">
                         Welcome to,</div>
                     <div class="text-2">
-                        BULACAN</div>
+                        BULACAN!</div>
                     <div class="text-3">
                         Expect . Explore . Enjoy <span class="typing"></span></div>
-                    <a class="text-4" href="places.html">Explore</a>
+                    <a class="text-4" href="cities.html">Explore</a>
                 </div>
             </div>
         </section>
@@ -78,7 +78,7 @@
         </div>
     </section>
 
-    <!-- services section start -->
+    <!-- services section start
     <section class="services" id="services">
         <div class="max-width">
             <h2 class="title">
@@ -117,10 +117,10 @@
             </div>
         </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- skills section start -->
-    <section class="skills" id="skills">
+    <!-- <section class="skills" id="skills">
         <div class="max-width">
             <h2 class="title">
                 Travel Tips</h2>
@@ -133,8 +133,8 @@
                     </p>
                     <a href="#">Read more</a>
                 </div>
-                <div class="column right">
-                    <!-- <div class="bars">
+                <div class="column right"> -->
+    <!-- <div class="bars">
                         <div class="info">
                             <span></span>
                             <span></span>
@@ -142,7 +142,7 @@
                         <div class="line html">
                         </div>
                     </div> -->
-                    <!-- <div class="bars">
+    <!-- <div class="bars">
                         <div class="info">
                             <span></span>
                             <span></span>
@@ -174,10 +174,10 @@
                         <div class="line mysql">
                         </div>
                     </div> -->
-                </div>
+    <!-- </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- teams section start -->
     <section class="teams" id="teams">
@@ -187,47 +187,75 @@
             <div class="carousel owl-carousel">
                 <div class="card">
                     <div class="box">
-                        <img src="#" alt="">
+                        <img src="img-teams/jen.jpg" alt="">
                         <div class="text">
-                            Richard Gonzales</div>
+                            Jenelyn Sasota</div>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            Team Manager
+                        </p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <img src="#" alt="">
+                        <img src="img-teams/paulo.jpg" alt="">
                         <div class="text">
-                            Mikko John Falcon</div>
+                            Mark Paulo Cruz</div>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            Full Stack Web Developer</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <img src="#" alt="">
+                        <img src="img-teams/richard.jpg" alt="">
                         <div class="text">
-                            Empty Slot 3</div>
+                            Richard Gonzales Jr.</div>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            Web Developer / Designer</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <img src="#" alt="">
+                        <img src="img-teams/cath.jpg" alt="">
                         <div class="text">
-                            Empty Slot 4</div>
+                            Catherine Salazar</div>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            Main Web Designer</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <img src="#" alt="">
+                        <img src="img-teams/roselyn.jpg" alt="">
                         <div class="text">
-                            Empty Slot 5</div>
+                            Roselyn Ramos</div>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            Researcher / Information Provider</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="img-teams/elaiza.jpg" alt="">
+                        <div class="text">
+                            Elaiza Calma</div>
+                        <p>
+                            Researcher / Information Provider</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="img-teams/madelyn.jpg" alt="">
+                        <div class="text">
+                            Madelyn Ramos</div>
+                        <p>
+                            Tester / Researcher</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="img-teams/arvin.png" alt="">
+                        <div class="text">
+                            Arvin Arceo</div>
+                        <p>
+                            Documentation / Tester</p>
                     </div>
                 </div>
             </div>
@@ -305,49 +333,11 @@
 
     <!-- footer section start -->
     <footer>
-        <span><a href="">Experience Bulacan</a> | <span class="far fa-copyright"></span> 2020 All rights reserved.
+        <span><a href="">Experience Bulacan</a> | <span class="far fa-copyright"></span> 2021 All rights reserved.
         </span>
     </footer>
 
-    <script>
-        $(document).ready(function() {
-            $(window).scroll(function() {
-
-                // STICKY NAVBAR
-                if (this.scrollY > 20) {
-                    $('.navbar').addClass("sticky");
-                } else {
-                    $('.navbar').removeClass("sticky");
-                }
-
-                // SHOW/HIDE SCRIPT
-                if (this.scrollY > 500) {
-                    $('.scroll-up-btn').addClass("show");
-                } else {
-                    $('.scroll-up-btn').removeClass("show");
-                }
-            });
-
-            // GO TO TOP BUTTON
-            $('.scroll-up-btn').click(function() {
-                $('html').animate({
-                    scrollTop: 0
-                });
-                $('html').css("scrollBehavior", "auto");
-            });
-
-            $('.navbar .menu li a').click(function() {
-                // GO TO SPECIFIC NAVBAR ITEM
-                $('html').css("scrollBehavior", "smooth");
-            });
-
-            // MENU ICON
-            $('.menu-btn').click(function() {
-                $('.navbar .menu').toggleClass("active");
-                $('.menu-btn i').toggleClass("active");
-            });
-        });
-    </script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

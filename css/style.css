@@ -245,10 +245,13 @@ video {
     font-size: 75px;
     font-weight: 600;
     margin-left: -3px;
+    color: royalblue;
+    text-shadow: -2px 2px rgba(0, 0, 0, 0.4);
+    letter-spacing: 5px;
 }
 
 .home .home-content .text-3 {
-    font-size: 40px;
+    font-size: 30px;
     margin: 5px 0;
 }
 

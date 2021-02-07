@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.scroll-up-btn {
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: royalblue;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    border-bottom-width: 2px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    box-shadow: 1px 1px 5px 0 #000;
+}
+
+.scroll-up-btn.show {
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.scroll-up-btn:hover {
+    filter: brightness(90%);
+}
+
+.wrapper {
+    width: 100%;
+    margin: auto;
+}
+
+.topnav {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    padding: 5px 100px;
+    background: royalblue;
+    box-shadow: 0 0 30px -10px;
+}
+
+.logo {
+    float: left;
+}
+
+.logo h2 {
+    color: #fff;
+}
+
+.logo a:hover {
+    text-decoration: none;
+}
+
+.logo h2 span {
+    color: rgb(94, 194, 70);
+}
+
+.navlist {
+    float: right;
+}
+
+.navlist ul {
+    display: flex;
+}
+
+.navlist ul li {
+    list-style: none;
+    margin: 10px 20px;
+}
+
+.navlist ul li a {
+    color: rgb(221, 219, 219);
+    transition: .3s ease;
+    text-decoration: none;
+}
+
+.navlist ul li .active {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.navlist ul li a:hover {
+    color: #fff;
+}
+
+.carousel-item {
+    background: #000;
+}
+
+.carousel-item img {
+    opacity: .3;
+}
+
+#demo {
+    position: relative;
+    width: 100%;
+    top: 0;
+    z-index: -1;
+}
+
+.content {
+    width: 100%;
+    padding: 50px 100px;
+    border-bottom: 1px solid silver;
+}
+
+.list1 {
+    width: 100%;
+    text-align: center;
+}
+
+.list1 ol li {
+    margin: 5px;
+}
+
+.list1 ol li a {
+    margin-left: 20px;
+}
+
+.list1 ol {
+    flex-direction: column;
+    flex-wrap: wrap;
+    display: flex;
+    height: 200px;
+    text-align: left;
+    background: rgb(221, 235, 241);
+    border-radius: 5px;
+    padding: 20px 30px;
+    border: 1px solid rgba(65, 105, 225, 0.24);
+}
+
+footer {
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+.menu-btn i {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+.direction {
+    padding: 20px 100px;
+    border-bottom: 1px solid silver;
+    color: #555;
+    font-size: 12px;
+}
+
+.direction a {
+    color: #555;
+    font-weight: bold;
+}
+
+.direction a:hover {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1300px) {
+    .list1 ol {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .list1 ol {
+        height: 340px;
+    }
+}
+
+@media screen and (max-width: 951px) {
+    .topnav {
+        padding: 5px 10px;
+    }
+    .content {
+        padding: 50px 10px;
+    }
+    .list1 ol {
+        height: 340px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .menu-btn i {
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active:before {
+        content: "\f00d";
+    }
+    .navlist .menu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+        display: block;
+    }
+    .navlist .menu.active {
+        left: 0;
+    }
+    .navlist .menu li {
+        width: 100%;
+        margin: 40px 0;
+    }
+    .navlist .menu li a {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .list1 ol {
+        height: 480px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .list1 ol {
+        height: 1050px;
+        padding-left: 50px;
+    }
+    .list1 ol li a {
+        font-size: 20px;
+    }
+}
