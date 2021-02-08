@@ -195,6 +195,9 @@ footer {
     .list1 ol {
         height: 340px;
     }
+    .direction {
+        padding: 30px;
+    }
 }
 
 @media screen and (max-width: 800px) {
